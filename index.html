@@ -5,8 +5,14 @@
         <title>Wunderlust</title>
     </head>    
     <body>
-        Wunderlust Travel 
-        (logo.png)
+        <h1>Wunderlust Travel</h1> 
+        <picture>
+            <source srcset="images/logo-S.png" media="(max-width: 320px)">
+            <source  srcset="images/logo-M.png" media="(max-width: 780px)">
+            <source  srcset="images/logo-L.png"media="(max-width: 1024px)">
+            <img src="images/logo-L.png" alt="sunset logo">
+        </picture>
+
         Let Wunderlust Travel help you plan the trip of your dreams!
 
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -18,9 +24,24 @@
         Majorca
         Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
 
-        majorca-waves.png
-        majorca-beach.png
-        majorca-cove.png
+        <picture>
+            <source srcset="images/majorca-waves-S.png" media="(max-width: 320px)">
+            <source  srcset="images/majorca-waves-M.png" media="(max-width: 780px)">
+            <source  srcset="images/majorca-waves-L.png"media="(max-width: 1024px)">
+            <img src="images/majorca-waves-L.png" alt="Ocean waves crashing into a cliff">
+        </picture>
+        <picture>
+            <source srcset="images/majorca-beach-S.png" media="(max-width: 320px)">
+            <source  srcset="images/majorca-beach-M.png" media="(max-width: 780px)">
+            <source  srcset="images/majorca-beach-L.png"media="(max-width: 1024px)">
+            <img src="images/majorca-beach-L.png" alt="secluded beach">
+        </picture>
+        <picture>
+            <source srcset="images/majorca-cove-S.png" media="(max-width: 320px)">
+            <source  srcset="images/majorca-cove-M.png" media="(max-width: 780px)">
+            <source  srcset="images/majorca-cove-L.png"media="(max-width: 1024px)">
+            <img src="images/majorca-cove-L.png" alt="Cove with green trees surronding it">
+        </picture>
 
 
         Plan Your Trip
@@ -82,23 +103,42 @@
         Testimonials
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
         Miranda Blake
-        miranda-blake.png
+        <picture>
+            <source srcset="images/miranda-blake-S.png" media="(max-width: 320px)">
+            <source  srcset="images/miranda-blake-M.png" media="(max-width: 780px)">
+            <source  srcset="images/miranda-blake-L.png"media="(max-width: 1024px)">
+            <img src="images/miranda-blake-L.png" alt="Cove with green trees surronding it">
+        </picture>
         Traveling From: London, England
         “I traveled here for business, but my stay was extended. Now it is my home.”
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
         Max Winter
-        max-winter.png
+        <picture>
+            <source srcset="images/max-winter-S.png" media="(max-width: 320px)">
+            <source  srcset="images/max-winter-M.png" media="(max-width: 780px)">
+            <source  srcset="images/max-winter-L.png"media="(max-width: 1024px)">
+            <img src="images/max-winter-L.png" alt="Cove with green trees surronding it">
+        </picture>
         Traveling From: Berlin, Germany
         “Great escape from my reality. Beautiful sunsets, wonderful people, great beer. ”
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
         Inés Villegoes
-        ines-villegoes.png
+        <picture>
+            <source srcset="images/ines-villegoes-S.png" media="(max-width: 320px)">
+            <source  srcset="images/ines-villegoes-M.png" media="(max-width: 780px)">
+            <source  srcset="images/ines-villegoes-L.png"media="(max-width: 1024px)">
+            <img src="images/ines-villegoes-L.png" alt="Cove with green trees surronding it">
+        </picture>
         Traveling From: Barcelona, Spain
         “A very safe environment for all travelers.”
-
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
         Carmen Lorenzo
-        carmen-lorenzo.png
+        <picture>
+            <source srcset="images/carmen-lorenzo-S.png" media="(max-width: 320px)">
+            <source  srcset="images/carmen-lorenzo-M.png" media="(max-width: 780px)">
+            <source  srcset="images/carmen-lorenzo-L.png"media="(max-width: 1024px)">
+            <img src="images/carmen-lorenzo-L.png" alt="Cove with green trees surronding it">
+        </picture>  
         Traveling From: Madrid, Spain
         “Live, laugh, love-- everything you need in Majorca.”
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -148,10 +188,27 @@
         Population: 923,608
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
         Contact Us
-        First Name (Enter first name)
-        Last Name (Enter last name)
+        <label>First Name:</label>
+		<input type="text" id="firstname" name="firstname" placeholder="Enter your first name"  required>
+
+        <label>Lasdt Name:</label>
+		<input type="text" id="lastname" name="lastname" placeholder="Enter your lasr name"  required>
+
+		<label>Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+			
+		<label>Phone Number:</label>
+		<input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>				
+
+		<label>Preferred Contact Method:</label>
+		<fieldset>
+		<input type="radio" id="contact" name="contact" value="Phone" required>
+			<label>Phone:</label>
+		</input>
+		<input type="radio" id="contact" name="contact" value="Email" required>
+			<label>Email:</label>
+		</input>
 
         Contact Method (Email, Text, Phone)
         Email Address (Enter Email)
@@ -161,10 +218,10 @@
         Travel Time (Fall, Winter, Spring, Summer, Flexible)
 
 
-
-        Copyright 2021 Wunderlust
-        Privacy Statement
-        Terms of Service
-
+        <footer>    
+            Copyright 2021 Wunderlust
+            Privacy Statement
+            Terms of Service
+        </footer>
     </body>
 </html>
