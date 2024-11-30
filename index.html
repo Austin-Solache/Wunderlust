@@ -22,10 +22,13 @@
             <a href="#">Contact Us</a>
         </nav>
         <h2>Majorca</h2>
-        <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, 
+        <main>
+            <p>
+            Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, 
             picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, 
             while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
-        </p>
+            </p>
+        </main>    
         <section>    
             <picture>
                 <source srcset="images/majorca-waves-S.png" media="(max-width: 320px)">
@@ -45,6 +48,8 @@
                 <source  srcset="images/majorca-cove-L.png" media="(max-width: 1024px)">
                 <img src="images/majorca-cove-L.png" alt="Cove with green trees surronding it">
             </picture>
+        </section>
+        <section>    
             <h2>Plan Your Trip</h2>
             <div>    
                 <h3>How to Get there</h3>
@@ -99,7 +104,7 @@
             <polyline points="9 6 15 12 9 18" />
             </svg> 
         </section>
-        <article>
+        <section>
             <h2>Testimonials</h2>
             <div>    
                 <h3>Miranda Blake</h3>
@@ -188,49 +193,50 @@
                 </svg>
             </div>
             <p>Population: 923,608</p> 
-        </article>
-        <h2>Contact Us</h2>
-        <label>First Name:</label>
-		<input type="text" id="firstname" name="firstname" placeholder="Enter your first name"  required>
-        <label>Lasdt Name:</label>
-		<input type="text" id="lastname" name="lastname" placeholder="Enter your lasr name"  required>
-        <label>Preferred Contact Method:</label>
-		<fieldset>
-            <label>Phone</label>
-            <input type="radio" id="contact" name="contact" value="Phone" required>
-            <label>Text</label>
-            <input type="radio" id="contact" name="contact" value="Text" required>
-            <label>Email</label>
-            <input type="radio" id="contact" name="contact" value="Email" required>
-            </input>
-        </fieldset>
-		<label>Email:</label>
-		<input type="email" id="email" name="email" placeholder="Enter your email" required>
-			
-		<label>Phone Number:</label>
-		<input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>
+        </sectiom>
+            
+            <h2>Contact Us</h2>
+            <label>First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"  required>
+            <label>Lasdt Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your lasr name"  required>
+            <label>Preferred Contact Method:</label>
+            <fieldset>
+                <label>Phone</label>
+                <input type="radio" id="contact" name="contact" value="Phone" required>
+                <label>Text</label>
+                <input type="radio" id="contact" name="contact" value="Text" required>
+                <label>Email</label>
+                <input type="radio" id="contact" name="contact" value="Email" required>
+                </input>
+            </fieldset>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+            <label>Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>
 
-        <label for="destination">Select your Destination:</label>
-		<select name="destination" id="destination" required>
-            <option value="" disabled selected>Select a Destination</option>
-            <option value="Barcelona">Barcelona</option>
-            <option value="Granada">Granada</option>
-            <option value="Ibiza">Ibiza</option>
-            <option value="Madrid">Madrid</option>
-            <option value="Majorca">Majorca</option>
-            <option value="Seville">Seville</option>
-            <option value="Tenerife">Tenerife</option>
-            <option value="Valencia">Valencia</option>
-        </select>
-        <label for="time">Time of year:</label>
-		<select name="time" id="time" required>
-            <option value="" disabled selected>Select a time of year</option>
-            <option value="Fall">Fall</option>
-            <option value="Winter">Winter</option>
-            <option value="Spring">Spring</option>
-            <option value="Summer">Summer</option>
-            <option value="Flexible">Flexible</option>
-        </select>     
+            <label for="destination">Select your Destination:</label>
+            <select name="destination" id="destination" required>
+                <option value="" disabled selected>Select a Destination</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Granada">Granada</option>
+                <option value="Ibiza">Ibiza</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Majorca">Majorca</option>
+                <option value="Seville">Seville</option>
+                <option value="Tenerife">Tenerife</option>
+                <option value="Valencia">Valencia</option>
+            </select>
+            <label for="time">Time of year:</label>
+            <select name="time" id="time" required>
+                <option value="" disabled selected>Select a time of year</option>
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Flexible">Flexible</option>
+            </select>     
         <footer>    
             Copyright 2021 Wunderlust
             Privacy Statement
