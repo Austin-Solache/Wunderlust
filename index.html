@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="uft-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wunderlust</title>
     </head>    
     <body>
-        <header>    
+        <header>
+            <a href='#main'>Skip to main</a>    
             <h1>Wunderlust Travel</h1> 
             <picture>
                 <source srcset="images/logo-S.png" media="(max-width: 320px)">
@@ -19,17 +21,17 @@
             <a href="#">Destinations</a>
             <a href="#">Inspirations</a>
             <a href="#">Special</a>
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
         </nav>
         <h2>Majorca</h2>
-        <main>
+        <main id="main">
             <p>
             Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, 
             picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, 
             while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
             </p>
         </main>    
-        <section>    
+        <div>    
             <picture>
                 <source srcset="images/majorca-waves-S.png" media="(max-width: 320px)">
                 <source  srcset="images/majorca-waves-M.png" media="(max-width: 780px)">
@@ -48,7 +50,7 @@
                 <source  srcset="images/majorca-cove-L.png" media="(max-width: 1024px)">
                 <img src="images/majorca-cove-L.png" alt="Cove with green trees surronding it">
             </picture>
-        </section>
+        </div>
         <section>    
             <h2>Plan Your Trip</h2>
             <div>    
@@ -193,8 +195,8 @@
                 </svg>
             </div>
             <p>Population: 923,608</p> 
-        </sectiom>
-            
+        </section>
+        <article id="contact">
             <h2>Contact Us</h2>
             <label>First Name:</label>
             <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"  required>
@@ -202,20 +204,17 @@
             <input type="text" id="lastname" name="lastname" placeholder="Enter your lasr name"  required>
             <label>Preferred Contact Method:</label>
             <fieldset>
+                <input type="radio" id="contact-phone" name="contact-phone" value="Phone" required>
                 <label>Phone</label>
-                <input type="radio" id="contact" name="contact" value="Phone" required>
-                <label>Text</label>
-                <input type="radio" id="contact" name="contact" value="Text" required>
+                <input type="radio" id="contact-email" name="contact-email" value="Email" required>
                 <label>Email</label>
-                <input type="radio" id="contact" name="contact" value="Email" required>
-                </input>
+                <input type="radio" id="contact-text" name="contact-text" value="Text" required>
+                <label>Text</label>
             </fieldset>
             <label>Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> 
             <label>Phone Number:</label>
             <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>
-
             <label for="destination">Select your Destination:</label>
             <select name="destination" id="destination" required>
                 <option value="" disabled selected>Select a Destination</option>
@@ -236,7 +235,8 @@
                 <option value="Spring">Spring</option>
                 <option value="Summer">Summer</option>
                 <option value="Flexible">Flexible</option>
-            </select>     
+            </select>
+        </article>         
         <footer>    
             Copyright 2021 Wunderlust
             Privacy Statement
