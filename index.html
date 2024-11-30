@@ -195,27 +195,46 @@
         <label>Lasdt Name:</label>
 		<input type="text" id="lastname" name="lastname" placeholder="Enter your lasr name"  required>
 
+        <label>Preferred Contact Method:</label>
+		<fieldset>
+            <label>Phone</label>
+            <input type="radio" id="contact" name="contact" value="Phone" required>
+
+            <label>Text</label>
+            <input type="radio" id="contact" name="contact" value="Text" required>
+            
+            <label>Email</label>
+            <input type="radio" id="contact" name="contact" value="Email" required>
+            </input>
+        </fieldset>
+
 		<label>Email:</label>
 		<input type="email" id="email" name="email" placeholder="Enter your email" required>
 			
 		<label>Phone Number:</label>
-		<input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>				
+		<input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone" required>
 
-		<label>Preferred Contact Method:</label>
-		<fieldset>
-		<input type="radio" id="contact" name="contact" value="Phone" required>
-			<label>Phone:</label>
-		</input>
-		<input type="radio" id="contact" name="contact" value="Email" required>
-			<label>Email:</label>
-		</input>
-
-        Contact Method (Email, Text, Phone)
-        Email Address (Enter Email)
-        Phone Number (Enter telephone number)
-
-        Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-        Travel Time (Fall, Winter, Spring, Summer, Flexible)
+        <label for="destination">Select your Destination:</label>
+		<select name="destination" id="destination" required>
+            <option value="" disabled selected>Select a Destination</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Granada">Granada</option>
+            <option value="Ibiza">Ibiza</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Majorca">Majorca</option>
+            <option value="Seville">Seville</option>
+            <option value="Tenerife">Tenerife</option>
+            <option value="Valencia">Valencia</option>
+        </select>
+        <label for="time">Time of year:</label>
+		<select name="time" id="time" required>
+            <option value="" disabled selected>Select a time of year</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Flexible">Flexible</option>
+        </select>     
 
 
         <footer>    
