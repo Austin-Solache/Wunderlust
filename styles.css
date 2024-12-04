@@ -3,6 +3,16 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+:root{
+	--yellow:#F6D64A;
+	--teal:#55BCD5;
+	--purple:#9B26B0;
+	--blue:#499BD2;
+	--darkgray:#222222;
+	--lightgray:#EAEAEA;
+	--white:#FFFFFF;
+	--black:#000000;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,4 +56,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* END OF CSS RESET */
+/* Small Screen Size*/
+
+/* Medium Screen Size*/
+@media screen and (min-width: 880px){
+	body{
+		background-color: red;
+	}
+}
+/* Large Screen Size*/
+@media screen and (min-width: 1300px){
+	body{
+		background-color: blue;
+	}
 }
