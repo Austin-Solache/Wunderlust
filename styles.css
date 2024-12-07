@@ -318,17 +318,3 @@ article h2, article p {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
-/* Medium Screen Size*/
-@media screen and (min-width: 880px){
-	body{
-		background-color: red;
-	}
-}
-
-/* Large Screen Size*/
-@media screen and (min-width: 1300px){
-	body{
-		background-color: blue;
-	}
-}
