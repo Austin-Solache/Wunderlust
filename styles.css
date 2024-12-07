@@ -60,6 +60,12 @@ table {
 }
 /* END OF CSS RESET */
 /* Small Screen Size*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 .sr-only, #toggle, #skip{
     position: absolute;
     width: 1px;
@@ -198,6 +204,7 @@ article h2, article p {
 #testimonials section {
 	position: relative; 
 	right:20px;
+	
 }
 #testimonials img {
 	position: relative; 
@@ -235,12 +242,13 @@ article h2, article p {
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: center;
+	margin-top: -100px;
 }
 #about h3 {
 	position: relative;
 	font-size: 40px;
 	width: 300px;
-	top: 135px;
+	top: 25px;
 	padding-left: 30px;
 }
 #contact h3 {
