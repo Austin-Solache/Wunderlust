@@ -12,6 +12,7 @@
 	--lightgray:#EAEAEA;
 	--white:#FFFFFF;
 	--black:#000000;
+	--fonts: Molle, Montserrat;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -40,7 +41,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -59,6 +60,264 @@ table {
 }
 /* END OF CSS RESET */
 /* Small Screen Size*/
+.sr-only, #toggle, #skip{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+}
+h1,h2,h3 {
+	font-family: Molle;
+}
+h4, p, q, small, nav, button, form {
+	font-family: Montserrat;
+}
+#logo, h1 ,header p {
+	position: relative;
+}
+
+#menu-toggle{
+	position: relative;
+	display: grid;
+	width: 100%;
+}
+#menu-toggle ul {
+	display: none;
+}
+#menu-toggle:hover ul {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: -140px;
+}
+#menu-toggle label{
+	position: relative;
+	bottom: 190px;
+	width: 120px;
+	left:70%;
+	background-color: var(--yellow);
+	position: relative;
+	text-align: center;
+	color: var(--black);
+	padding: 15px;
+}
+#menu-toggle li {
+	position: relative;
+	border: 1px solid var(--black);
+	text-align: center;
+	padding: 25px;
+	background-color: var(--teal);
+}
+#menu-toggle li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--black);
+	
+}
+#logo {
+	right: 20px;
+}
+h1 {
+	font-size: 50px;
+}
+h1 , header p {
+	padding-left: 30px;
+	width: 70%;
+} 
+h2 {
+	font-size: 40px;
+}
+article h2, article p {
+	width: 80%;
+	padding-left: 30px;
+	padding-bottom: 15px;
+}
+#img-grid  img{
+	width: 100%;
+	padding-bottom: 15px;
+	min-height: 350px;
+}
+#plan {
+	background-color: var(--yellow);
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+#plan h3 {
+	padding-bottom: 25px;
+}
+#plan section {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 80px;
+	background-color: var(--teal);
+	margin: 30px;
+	border-radius: 10px;
+	border: solid 5px var(--white);
+}
+#plan img {
+	position: relative;
+	height: 200px;
+	bottom: -30px;
+
+}
+#plan section h4 {
+	position: absolute;
+	display: flex;
+	bottom: 300px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#plan h3 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+}
+
+#testimonials {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+#testimonials h3 {
+	position: absolute;
+	display: flex;
+	bottom:1820px;
+	right: 150px;
+	font-size: 50px;
+}
+#testimonials section {
+	position: relative; 
+	right:20px;
+}
+#testimonials img {
+	position: relative; 
+	left:10px;
+	padding-top: 30px;
+	height: 250px;
+}
+#testimonials h4 {
+	display: flex;
+	position: relative;
+	right: -40px;
+	font-weight: bold;
+	font-size: 30px;
+	width: 200px;
+	text-align: center;
+}
+#testimonials p {
+	position: relative;
+	margin-bottom: -15px;
+	text-align: center;
+}
+#testimonials q {
+	position: relative;
+	display: flex;
+	right: -33px;
+	text-align: center;
+	width: 200px;
+}
+#about div{
+	background-color: var(--blue);
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+	padding-top: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+}
+#about h3 {
+	position: relative;
+	font-size: 40px;
+	width: 300px;
+	top: 135px;
+	padding-left: 30px;
+}
+#contact h3 {
+	position: relative;
+	font-size: 40px;
+	top: 15px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+#contact h3 span {
+	font-family: Montserrat;
+	font-size: 20px;
+}
+#contact form {
+	text-align: center;
+}
+#names label {
+	position: relative;
+}
+#fName, #lName, #email, #phone, #destination, #travelTime  {
+	border: 2px solid var(--purple);
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+#names label{
+	position:relative;
+	display: flex;
+	font-weight: bold;
+	text-transform: uppercase;
+	left: 65px;
+}
+#names label span,
+#nums fieldset legend span
+{
+	color: var(--purple);
+}
+#contact #nums fieldset legend
+{
+	position:relative;
+	display: flex;
+	font-weight: bold;
+	text-transform: uppercase;
+	right: 100px;
+}
+#nums fieldset .radio-input {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+	right: 150px;
+	color: var(--purple);
+}
+
+#prefEmail, #prefText, #prefPhone {
+	height: 70px;
+	accent-color:var(--purple);
+	border: 40px solid var(--purple);
+}
+.radio-label {
+	position: relative;
+	display: flex;
+	bottom: 60px;
+	left: 150px;
+}
+#nums #email
+{
+	position:relative;
+	display: flex;
+	font-weight: bold;
+	text-transform: uppercase;
+	left: 65px;
+}
+#nums label, #selects label {
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
 /* Medium Screen Size*/
 @media screen and (min-width: 880px){
@@ -66,6 +325,7 @@ table {
 		background-color: red;
 	}
 }
+
 /* Large Screen Size*/
 @media screen and (min-width: 1300px){
 	body{
