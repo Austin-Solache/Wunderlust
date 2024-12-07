@@ -313,8 +313,9 @@ article h2, article p {
 	text-transform: uppercase;
 	left: 65px;
 }
-#nums label, #selects label {
+#nums label, #selects label{
 	position: relative;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-right: 230px;
 }
