@@ -319,3 +319,30 @@ article h2, article p {
 	text-transform: uppercase;
 	margin-right: 230px;
 }
+#mySubmit {
+	text-align: center;
+	width: 350px;
+	height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--white);
+	background-color: var(--purple);
+	border: 1px solid var(--white);
+	margin-bottom: 15px;
+}
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+	background-color: var(--lightgray);
+}
+footer p {
+	margin-bottom: 30px;
+}
+footer a {
+	display: grid;
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--black);
+	grid-template-rows: repeat(2, 1fr);
+}
